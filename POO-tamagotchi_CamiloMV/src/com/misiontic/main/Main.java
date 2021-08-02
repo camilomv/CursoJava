@@ -14,10 +14,12 @@ public class Main {
 		
 		Veterinary veterinary = new Veterinary();
 		Medicine m = veterinary.prescribeMedicine(cat);
-		System.out.println("The Medicine is: " + m.name);
+		//System.out.println("The Medicine is: " + m.name);
 		
-		System.out.println("hambre gatico: " + cat.hungry);
-		
+		System.out.println("cat큦 weight: " + cat.weight);
+		System.out.println("cat큦 happiness: " + cat.happiness);
+		System.out.println("cat큦 hungry: " + cat.hungry);
+		System.out.println("cat큦 health: " + cat.health);
 
 	}
 
