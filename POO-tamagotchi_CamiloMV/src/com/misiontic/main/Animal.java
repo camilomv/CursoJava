@@ -13,7 +13,7 @@ public class Animal {
 	
 	//Tengo que dar una respuesta cuando termine de comer?
 	//Yo quiero decir si ya termine de comer
-	private void eat(Food food) {
+	public void eat(Food food) {
 		weight = weight + 2;
 		if(hungry <= food.calories) {
 			hungry = 0;

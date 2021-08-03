@@ -12,9 +12,12 @@ public class Main {
 		cat.sleep = 0; //0 to 100, 0 awake y 100 sleepy
 		cat.awake = true; //false is sleepy and true is awake
 		
+		Food apple = new Food();
+		apple.calories = 5;
 		Veterinary veterinary = new Veterinary();
 		Medicine m = veterinary.prescribeMedicine(cat);
-		//System.out.println("The Medicine is: " + m.name);
+		cat.eat(apple);
+		System.out.println("The Medicine is: " + m.name);
 		
 		System.out.println("cat´s weight: " + cat.weight);
 		System.out.println("cat´s happiness: " + cat.happiness);
